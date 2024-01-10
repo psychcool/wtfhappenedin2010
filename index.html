@@ -11,7 +11,7 @@
       background-color: white;
       color: #111111;
       text-align: center;
-      font-family: Helvetica,Arial,serif;
+      font-family: Helvetica, Arial, serif;
     }
 
     .container {
@@ -25,55 +25,70 @@
       top: -10px;
     }
 
-
     h2 {
       font-size: 30px;
-      text-align: center; /* Center the text within the h4 element */
-      margin: 0 auto 20px; /* Center the h4 element and add bottom margin */
+      text-align: center;
+      margin: 0 auto 20px;
       margin-top: 30px;
     }
 
     h3 {
       font-size: 20px;
-      text-align: center; /* Center the text within the h4 element */
-      margin: 0 auto 20px; /* Center the h4 element and add bottom margin */
+      text-align: center;
+      margin: 0 auto 20px;
     }
 
     .content-container {
       display: none;
       text-align: left;
       margin: 0 auto;
-      padding: 10px; /* Adjust padding as needed */
-      width: 500px; /* Set width as needed */
-      top: -5px; /* Adjust top position as needed */
+      padding: 10px;
+      width: 500px;
+      top: -5px;
       font-size: 16px;
     }
 
     /* Image container styles */
     .image-container {
-      margin-top: 20px; /* Adjust top margin as needed */
+      margin-top: 20px;
     }
 
     .image-container img {
-      width: 100%; /* Make the image fill its container */
-      max-width: 900px; /* Set a maximum width for the image */
-      display: block; /* Center the image */
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      display: block;
       margin: 0 auto;
     }
 
-    /* Media query for mobile devices in portrait mode */
-    @media only screen and (max-width: 600px) {
-      .container {
-        padding: 20px; /* Adjust padding for smaller screens */
-      }
-
-      .content-container {
-        width: 90%; /* Adjust the width for smaller screens */
-        margin-left: auto;
-        margin-right: auto;
+    /* Media queries for responsive design */
+    @media only screen and (max-width: 1200px) {
+      .image-container img {
+        max-width: 800px;
       }
     }
 
+    @media only screen and (max-width: 900px) {
+      .image-container img {
+        max-width: 600px;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      .content-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .image-container img {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
